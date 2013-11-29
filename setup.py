@@ -6,4 +6,6 @@ setup(name = 'django-emd',
       author = 'Joshua Blake',
       author_email = 'joshbblake@gmail.com',
       packages = find_packages(),
+      scripts = ['load_prices.sh',],
+      data_files = [('/tmp', ['bin/create_prices.sql'],
 )
