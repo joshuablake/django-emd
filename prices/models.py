@@ -12,3 +12,4 @@ class HistoricalPrice(models.Model):
     class Meta:
         unique_together = ('region', 'date', 'type')
         db_table = 'items_history'
+        managed = False
